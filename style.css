@@ -1,0 +1,559 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/10/2015, 12:13:35
+    Author     : Wensttay
+*/
+
+*{
+    margin : 0;
+    border: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 20px;
+}
+
+@font-face {
+    font-family: "Terror";
+    src: url("fonts/text/Future Blood.ttf");
+}
+
+body header, nav#menu ul ,#botao-enviar ,div#comunit{
+    background-color: black;
+}
+
+div#topo{
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(#0000ff, white);
+}
+
+#logo {
+    position: absolute;
+    margin-left: -360px;
+    top: 98px;
+    left: 50%;
+    float: left;
+    z-index: 1;
+}
+
+nav#menu {
+    display: block;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 132px;
+    top: 98px;
+    left: 50%;
+    z-index: 0;
+}
+
+nav#menu ul{
+    list-style: none;
+    position: relative;
+    float: left;
+    padding: 25px 12px 25px 100px;
+    width: 420px;
+    border-radius: 0 100px 100px 0;
+    visibility: visible;
+}
+
+nav#menu ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    
+}
+
+nav#menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Terror";
+    text-transform: uppercase;
+    font-size: 24px;
+    text-shadow: 0px 0px 12px blue;
+    transition: color 0.5s;
+}
+
+nav#menu ul li a:hover{
+    color: #0000ff;
+    transition: color 0.5s;
+}
+nav#menu ul li a:checked{
+    color: #0000ff;
+}
+
+footer#rodape {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+footer#rodape p {
+    text-align: center;
+    font-size: 12px;
+    font-family: cursive;
+}
+
+div#comunit a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    font-size: 40px;
+    margin-top: 60px;
+    left: 50%;
+    transition: color 0.5s;
+}
+
+div#comunit a:hover{
+    transition: color 0.5s;
+}   
+
+#botao-facebook{
+    margin-left: -90px;
+}
+
+#botao-facebook:hover{
+    color: #3b5998;
+}
+
+#botao-twitter{
+    margin-left: -30px;
+}
+
+#botao-twitter:hover{
+    color: #00aced;
+}
+
+#botao-feed{
+    margin-left: 30px;
+}
+
+#botao-feed:hover{
+    color: #f26522;
+}
+
+#botao-youtube{
+    margin-left: 90px;
+}
+
+#botao-youtube:hover{
+    color: #bb0000;
+}
+
+#botao-menu{
+    right: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+section#formulario{
+    width: 500px;
+    margin: 220px auto 100px auto;
+    border-radius: 50px;
+}
+section#formulario h1{
+    font-size: 24px;
+    font-family: monospace;
+    margin-bottom: 30px;
+    text-align: center;
+}
+section#formulario div{
+    border: black 3px solid;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 8px;
+}
+section#formulario div input{
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+    outline: none;
+}
+section#formulario div textarea{
+    width: 100%;
+    height: 100px;
+    max-width: 475px;
+    max-height: 100px;
+    outline: none;
+}
+
+#botao-enviar{
+    color: white;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 18px;
+    transition: background-color 0.5s, color 0.5s;
+    border: black 3px solid;
+}
+
+#botao-enviar:hover{
+    color: black;
+    background-color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#botao-enviar:active{
+    color: white;
+    background-color: #0000ff;
+    border-color: #0000ff;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+section#sobre-text{
+    width: 500px;
+    margin: 220px auto 100px auto;
+    border-radius: 50px;
+}
+
+section#sobre-text article h1 {
+    font-size: 24px;
+    font-family: monospace;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section#sobre-text article{
+    border: black 3px solid;
+    margin-bottom: 60px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+section#sobre-text article p{
+    margin: 8px;
+}
+
+section#colection-box {
+    width: 1600px;
+    height: 350px;
+    margin: 250px auto 0 auto;
+}
+
+.sprites{
+    width: 410px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+    float: left;
+    background: url("img/jogos.png") no-repeat top left;
+    margin-left: 185px;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.sprites:first-of-type{
+    margin-left: 0px;
+}
+
+.sprites:hover{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.d3{
+    background-position: 10px 0;   
+}
+
+.lol{
+    background-position: -500px 0;
+}
+
+.wow{
+    background-position: -1015px 0;
+}
+
+div.news {
+    float: left;
+    width: 315px;  
+}
+
+div.news:first-of-type{
+    margin-right: 40px;
+}
+
+div.news h1{
+    font-family: "Terror";
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#corpo-inicial {
+    height: 300px;
+    width: 680px;
+    margin: 250px auto 200px;
+}
+
+div.news div{
+    border: 5px black solid;
+    background: yellow;
+    border-radius: 30px;
+}
+
+#outlast, #slander, #super-mario{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    float: left;
+    opacity: 0.5;
+}
+
+#outlast {
+    background: url(img/outlast.png) no-repeat top left;
+    background-position: 0 -185px;
+}
+
+#slander {
+    background: url(img/slenderman.png) no-repeat top left;
+    background-position: 0 -170px;
+}
+
+#super-mario {
+    background: url(img/super-mario.png) no-repeat top left;
+    background-position: 0 -170px;
+}
+
+#outlast:hover, #slander:hover, #super-mario:hover{
+    height: 240px;
+    background-position: 0;
+    opacity: 1;
+    transition: height 1s, opacity 1s;
+}
+
+@-webkit-keyframes player-foto {
+    0%{
+       transform: rotate(0deg);
+       opacity: 0.5; 
+    }
+    10%{
+        transform: rotate(36deg);
+        opacity: 0.55;
+    }
+    20%{
+        transform: rotate(72deg);
+        opacity: 0.6;
+    }
+    30%{
+        transform: rotate(108deg);
+        opacity: 0.65;
+    }
+    40%{
+        transform: rotate(144deg);
+        opacity: 0.7;
+    }
+    50%{
+        transform: rotate(180deg);
+        opacity: 0.75;
+    }
+    60%{
+        transform: rotate(216deg);
+        opacity: 0.8;
+    }
+    70%{
+        transform: rotate(252deg);
+        opacity: 0.85;
+    }
+    80%{
+        transform: rotate(288deg);
+        opacity: 0.9
+    }
+    90%{
+        transform: rotate(324deg);
+        opacity: 0.95;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.pro {
+    width: 75px;
+    border: 5px black solid;
+    border-radius: 100%;
+    float: left;
+    margin-left: 18px;
+    margin-bottom: 18px;
+    opacity: 0.5;
+    //position: absolute;
+
+}
+
+.pro:hover{
+    animation: player-foto 1s;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1700px){
+    
+    section#colection-box {
+        width: 1000px;
+    }
+    
+    .sprites{
+        margin-left: 0px;
+    }
+    
+    .sprites:first-of-type{
+        margin-right: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 1150px){
+    
+    section#colection-box {
+        width: 400px;
+    }
+    
+    .sprites{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    
+    #corpo-inicial{
+        width: 340px;
+    }
+    
+    .news{
+        margin-bottom: 100px;
+    }
+    
+    div#comunit{
+        position: absolute;
+        top: 0;
+        height: 80px;
+        background-color: green;
+        z-index: 10;
+    }
+    
+    #topo{
+        visibility: hidden;
+    }
+    
+    div#comunit{
+        height: 55px;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        
+    }
+    
+    div#comunit a{
+        margin-top: 10px;
+        color: white ;
+        font-size: 35px;
+        position: fixed;
+        left: 0;
+    }
+    
+    #botao-facebook{
+        margin-left: 10px;
+    }
+    
+    #botao-twitter{
+        margin-left: 60px;
+    }
+    
+    #botao-feed{
+        margin-left: 110px;
+    }
+    
+    #botao-youtube{
+        margin-left: 160px;
+    }
+    
+    #botao-menu{
+        visibility: visible;
+        color: white;
+        left: inherit !important;
+        right: 10px;
+        z-index: 999;
+    }
+
+    nav#menu{
+        visibility: hidden;
+        position: absolute;
+        margin: 0;
+        right: 10px;
+        top: 55px;
+        right: 0 !important;
+        z-index: 998;
+    }
+    
+    nav#menu ul {
+    	visibility: hidden;
+        background-color: black;
+        border-radius: 0;
+        right: 0;
+        padding: 0;
+        width: 150px;
+        text-align: right;
+        position: fixed;
+        border-radius: 0 0 0 20px;
+    }
+    
+    nav#menu ul li a{
+        text-shadow: inherit;
+        color: white;
+    }
+    
+    #logo{
+        position: absolute;
+        margin-left: -147px;
+        top: 98px;
+        left: 50%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 500px){
+    
+    section#sobre-text, section#formulario{
+        width: 300px;
+    }
+    
+    .sprites{
+        background: url("img/jogos-small.png") no-repeat top left;
+        height: 240px;
+        width: 310px;
+        left: inherit;
+        right: inherit;
+    }
+    
+    section#colection-box{
+        margin: 200px auto 0 auto;
+    }
+    
+    .sprites:first-of-type{
+        margin-right: auto;
+    }
+    
+    .sprites:last-of-type{
+        margin-bottom: 100px;
+    }
+    
+    .d3{
+        background-position: 10px 0;   
+    }
+    
+    .lol{
+        background-position: -500px 0;
+    }
+    
+    .wow{
+        background-position: -1015px 0;
+    }
+}
+

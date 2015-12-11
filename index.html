@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Z.O.G.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="icomoon.css"/>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+			$('#botao-menu').click(function() {
+				$( '#menu-ul' ).css( "visibility", "visible" );
+			});
+		</script>
+    </head>
+    <body>
+        <header>
+            <div id="topo"></div>
+            <img id="logo" src="img/zo-logo.png">
+            <nav id="menu">
+                <ul id="menu-ul">
+                    <li>
+                        <p><a href="index.html">Inicio</a></p>
+                    </li>
+                    <li>
+                        <p><a href="pages/jogos.html">Jogos</a></p>
+                    </li>
+                    <li>
+                        <p><a href="pages/sobre.html">Sobre</a></p>
+                    </li>
+                    <li>
+                        <p><a href="pages/contato.html">Contato</a></p>
+                    </li>
+                </ul>
+            </nav>
+            <div id="comunit">
+                <a href="#" id="botao-facebook"><span class="icon-facebook2"></span></a>
+                <a href="#" id="botao-twitter"><span class="icon-twitter-old"></span></a>
+                <a href="#" id="botao-feed"><span class="icon-feed"></span></a>
+                <a href="#" id="botao-youtube"><span class="icon-youtube"></span></a>
+                <a id="botao-menu"><span class="icon-menu"></span></a>
+            </div>
+        </header>
+
+        <section id="corpo-inicial">
+            <div class="news">
+                <h1>Ultimos Soleds</h1>
+                <div id="outlast"></div>
+                <div id="slander"></div>
+                <div id="super-mario"></div>
+            </div>
+
+            <div class="news">
+                <h1>Players RX</h1>
+                <img class="pro" src="img/wensttay.jpg">
+                <img class="pro" src="img/pedro.jpg">
+                <img class="pro" src="img/victor.jpg">
+                <img class="pro" src="img/alysson.jpg">
+            </div>
+        </section>
+        <footer id="rodape">
+            <p>Feito por Wensttay S.A.</p>
+        </footer>
+    </body>
+</html>
